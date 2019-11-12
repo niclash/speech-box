@@ -229,7 +229,7 @@ F 3 "" H 1200 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 3300 3850 3300
+	1250 3300 1850 3300
 Wire Wire Line
 	3850 2900 2650 2900
 Wire Wire Line
@@ -708,4 +708,30 @@ Wire Wire Line
 Connection ~ 2650 4900
 Wire Wire Line
 	2650 4900 2650 5100
+$Comp
+L Device:C C7
+U 1 1 5DCFB1B1
+P 1850 3450
+F 0 "C7" H 1965 3496 50  0000 L CNN
+F 1 "0.1uF" H 1965 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1888 3300 50  0001 C CNN
+F 3 "~" H 1850 3450 50  0001 C CNN
+F 4 "C14663" H 1850 3450 50  0001 C CNN "LCSC"
+	1    1850 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 1850 3300
+Wire Wire Line
+	1850 3300 3850 3300
+$Comp
+L power:GND #PWR02
+U 1 1 5DCFD4CB
+P 1850 3600
+F 0 "#PWR02" H 1850 3350 50  0001 C CNN
+F 1 "GND" H 1855 3427 50  0000 C CNN
+F 2 "" H 1850 3600 50  0001 C CNN
+F 3 "" H 1850 3600 50  0001 C CNN
+	1    1850 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
